@@ -1,0 +1,4 @@
+npm ERR! code ERESOLVE
+npm ERR! unable to resolve dependency tree
+npm ERR! peer react@"^18.0.0" from package-name
+npm ERR! Fix the upstream dependency conflict
