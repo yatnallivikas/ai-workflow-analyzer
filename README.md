@@ -1,4 +1,4 @@
-\# AI Workflow Analyzer
+# AI Workflow Analyzer
 
 
 
@@ -8,111 +8,94 @@ An AI-powered DevOps workflow failure analyzer built using Python, Ollama, and L
 
 This beginner-friendly project reads workflow logs and uses a local AI model to identify:
 
-\- probable root cause
+- probable root cause
+- failed component
 
-\- failed component
+- suggested fix
 
-\- suggested fix
-
-\- severity level
-
-
-
-\---
+- severity level
 
 
 
-\# Features
+---
 
 
 
-\- Local AI execution using Ollama
-
-\- Workflow log analysis
-
-\- Root cause detection
-
-\- Suggested remediation steps
-
-\- Beginner-friendly setup
+# Features
 
 
 
-\---
+- Local AI execution using Ollama
+
+- Workflow log analysis
+
+- Root cause detection
+
+- Suggested remediation steps
+
+- Beginner-friendly setup
 
 
 
-\# Architecture
+---
 
 
+# Architecture
 
-```text
+```mermaid
+flowchart TD
 
-Workflow Logs
-
-&#x20;     ↓
-
-Python Script
-
-&#x20;     ↓
-
-Ollama API
-
-&#x20;     ↓
-
-Llama3 Model
-
-&#x20;     ↓
-
-AI Failure Analysis
-
+    A[Workflow Logs]
+    --> B[Python Script]
+    --> C[Ollama API]
+    --> D[Llama3 Model]
+    --> E[AI Failure Analysis]
 ```
 
 
-
-\---
-
-
-
-\# Tech Stack
+---
 
 
 
-\- Python
-
-\- Ollama
-
-\- Llama3
-
-\- GitHub
+# Tech Stack
 
 
 
-\---
+- Python
+
+- Ollama
+
+- Llama3
+
+- GitHub
 
 
 
-\# Prerequisites
+---
 
 
 
-\- Python 3.x
-
-\- Ollama installed
-
-\- Llama3 model downloaded
+# Prerequisites
 
 
 
-\---
+- Python 3.x
+
+- Ollama installed
+
+- Llama3 model downloaded
 
 
 
-\# Installation
+---
 
 
 
-\## Install Ollama
+# Installation
+
+
+
+## Install Ollama
 
 
 
@@ -124,7 +107,7 @@ https://ollama.com/download
 
 
 
-\## Pull Llama3 model
+## Pull Llama3 model
 
 
 
@@ -136,7 +119,7 @@ ollama pull llama3
 
 
 
-\## Install Python dependencies
+## Install Python dependencies
 
 
 
@@ -148,15 +131,15 @@ python -m pip install requests
 
 
 
-\---
+---
 
 
 
-\# Run the Project
+# Run the Project
 
 
 
-\## Start Ollama
+## Start Ollama
 
 
 
@@ -168,7 +151,7 @@ ollama run llama3
 
 
 
-\## Run analyzer
+## Run analyzer
 
 
 
@@ -180,75 +163,70 @@ python analyzer.py
 
 
 
-\---
+---
 
 
 
-\# Example Use Cases
+# Example Use Cases
 
 
 
-\- GitHub Actions failures
+- GitHub Actions failures
 
-\- Kubernetes pod issues
+- Kubernetes pod issues
 
-\- Docker build failures
+- Docker build failures
 
-\- Dependency conflicts
+- Dependency conflicts
 
-\- CI/CD troubleshooting
-
-
-
-\---
+- CI/CD troubleshooting
 
 
 
-\# Future Improvements
+---
 
 
 
-\- GitHub Actions integration
-
-\- Jenkins support
-
-\- Kubernetes log analysis
-
-\- Slack/Teams alerts
-
-\- Historical failure learning
-
-\- AI-assisted remediation
+# Future Improvements
 
 
 
-\---
+- GitHub Actions integration
+
+- Jenkins support
+
+- Kubernetes log analysis
+
+- Slack/Teams alerts
+
+- Historical failure learning
+
+- AI-assisted remediation
 
 
 
-\# Learning Goal
+---
+
+
+
+# Learning Goal
 
 
 
 This project was built as a beginner-friendly introduction to:
 
-\- Local LLMs
-
-\- AI-assisted DevOps
-
-\- Prompt engineering
-
-\- Python API integration
+- Local LLMs
+- AI-assisted DevOps
+- Prompt engineering
+- Python API integration
 
 
 
-\---
+---
 
 
 
-\# Repository
-
-
+# Repository
 
 https://github.com/yatnallivikas/ai-workflow-analyzer
 
